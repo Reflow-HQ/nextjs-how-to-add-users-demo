@@ -2,7 +2,7 @@ This example demonstrates how to add user accounts to any Next.js 14 app using [
 
 The app features a simple registration/sign in flow using either email and password or a social provider account. When signed in, users can view their profile information and make changes to their username and profile image.
 
-You can view a live demo here - TODO
+You can view a live demo here - [https://nextjs-how-to-add-users-demo.vercel.app/](https://nextjs-how-to-add-users-demo.vercel.app/)
 
 # Getting Started
 
