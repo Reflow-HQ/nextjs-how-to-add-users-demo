@@ -2,8 +2,8 @@ import Image from "next/image";
 import getAuth from "@/auth";
 import LoginButton from "./components/LoginButton";
 import LogoutButton from "./components/LogoutButton";
-import UpdateUserName from "./components/UpdateUser/UpdateUserName";
-import UpdateUserPhoto from "./components/UpdateUser/UpdateUserPhoto";
+import UpdateNameForm from "./components/UpdateUser/UpdateNameForm";
+import UpdatePhotoForm from "./components/UpdateUser/UpdatePhotoForm";
 
 export default async function Home() {
   const auth = getAuth();
@@ -95,8 +95,8 @@ export default async function Home() {
               className="mb-10 h-24 w-24 rounded-full object-cover"
             />
 
-            <UpdateUserName name={user.name} />
-            <UpdateUserPhoto photo={user.photo} />
+            <UpdateNameForm name={user.name} />
+            <UpdatePhotoForm photo={user.photo} />
 
             <LogoutButton />
           </>
