@@ -24,7 +24,7 @@ export function FormResultMessage({
   return (
     <div
       className={clsx(
-        "pointer-events-none absolute right-4 top-4 w-64 rounded border bg-white p-4 text-center transition duration-500",
+        "pointer-events-none absolute left-1/2 top-4 w-64 -translate-x-1/2 transform rounded border bg-white p-4 text-center transition duration-500",
         toastMessage ? "opacity-100" : "opacity-0",
         resultSuccess
           ? "border-blue-600 text-blue-600"

@@ -1,13 +1,8 @@
-import clsx from "clsx";
-
-export function FormSubmitButton({ isHidden }: { isHidden: boolean }) {
+export function FormSubmitButton() {
   return (
     <button
       type="submit"
-      className={clsx(
-        "focus:shadow-outline w-24 rounded-r bg-blue-500 px-4 py-2 text-sm font-bold text-white hover:bg-blue-600 focus:outline-none",
-        isHidden ? "hidden" : "",
-      )}
+      className="focus:shadow-outline w-24 rounded border border-blue-600 px-4 py-2 text-sm font-bold text-blue-600 hover:border-blue-800 hover:text-blue-800 focus:outline-none"
     >
       Save
     </button>

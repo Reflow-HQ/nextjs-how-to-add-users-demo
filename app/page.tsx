@@ -80,15 +80,23 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="flex w-full max-w-xl flex-col items-center border bg-white p-10 text-left">
+      <div className="relative flex w-full max-w-xl flex-col items-center border bg-white p-10 text-left">
         {user ? (
           <>
             <h2 className="mb-8 font-bold">
               Hello, {user.name || user.email}!
             </h2>
 
-            <UpdateUserPhoto photo={user.photo} />
+            <Image
+              src={user.photo}
+              alt="User Profile"
+              width={96}
+              height={96}
+              className="mb-10 h-24 w-24 rounded-full object-cover"
+            />
+
             <UpdateUserName name={user.name} />
+            <UpdateUserPhoto photo={user.photo} />
 
             <LogoutButton />
           </>
