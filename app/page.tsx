@@ -80,10 +80,10 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="relative flex w-full max-w-xl flex-col items-center border bg-white p-10 text-left">
+      <div className="relative flex w-full max-w-xl flex-col items-center border bg-white px-4 py-16 text-left">
         {user ? (
           <>
-            <h2 className="mb-8 font-bold">
+            <h2 className="mb-4 font-bold">
               Hello, {user.name || user.email}!
             </h2>
 
