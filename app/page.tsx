@@ -40,7 +40,7 @@ export default async function Home() {
 
           <a
             className="group flex gap-2 rounded-xl border border-gray-300 bg-gray-100 bg-gradient-to-b from-zinc-100 px-8 py-3 text-center backdrop-blur-2xl hover:bg-gray-200 hover:from-zinc-200"
-            href="https://reflowhq.com/TODO"
+            href="https://reflowhq.com/learn/how-to-add-users-to-any-nextjs-app"
           >
             <span>Read the full article </span>
             <span className="transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
